@@ -25,25 +25,36 @@
     });
   </script>
   <script>
-  $(function() {
-      $(".toplogo")
-          .mouseover(function() { 
-              var src = $(this).attr("src").replace("logo.png", "logolight.png");
-              $(this).attr("src", src);
-          })
-          .mouseout(function() {
-              var src = $(this).attr("src").replace("logolight.png", "logo.png");
-              $(this).attr("src", src);
-          });
-  });
+    $(document).ready(function() {
+        // mouse over
+        $(".topname1").mouseenter(function () {
+            $(this).switchClass("topname1", "topname2", 200);
+        });
+        // mouse out
+        $(".topname1").mouseleave(function () {
+            $(this).switchClass("topname2", "topname1", 200);
+        });
+    });
+  </script>
+  <script>
+  $(window).on('load', function() {
+    $("#cover").fadeOut(1000);
+});
   </script>
 </head>
 <body>
-  <div id="mainlogo"><a href="index.html"><img src="assets/logo.png" class="toplogo" width="230" height="126"  alt=""/></a>
-  <a href="photo.html" class="style1">Photo</a><a href="video.html" class="style1">Video</a><a href="contact.html" class="style1">Contact</a>
+  <div class="topname1"><img src="assets/sw.png" width="150" height="124"  alt=""/></div>
+<div id="mainlogo">
+  <a href="photo.html" class="style2">Photo</a><a href="video.html" class="style1">Video</a><a href="contact.html" class="style1">Contact</a>
   </div>
   <div id="welcome">
     <p>Here is the Home Page</p>
+  </div>
+    <div id="cover">
+  	<div class="box">
+		<div class="loader6">
+        </div>
+	</div>
   </div>
 </body>
 </html>
