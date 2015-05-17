@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Sam Wilber</title>
+  <link href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">
+  <link href="samwilber_style.css" rel="stylesheet" type="text/css">
+  <link href="http://vjs.zencdn.net/4.12/video-js.css" rel="stylesheet">
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script src="http://vjs.zencdn.net/4.12/video.js"></script>
+  <script type="text/javascript">
+    document.createElement('video');document.createElement('audio');document.createElement('track');
+  </script>
+  <script>
+    $(document).ready(function() {
+        // mouse over
+        $(".style1").mouseenter(function () {
+            $(this).switchClass("style1", "style2", 100);
+        });
+        // mouse out
+        $(".style1").mouseleave(function () {
+            $(this).switchClass("style2", "style1", 100);
+        });
+    });
+  </script>
+  <script>
+    $(document).ready(function() {
+        // mouse over
+        $(".topname1").mouseenter(function () {
+            $(this).switchClass("topname1", "topname2", 200);
+        });
+        // mouse out
+        $(".topname1").mouseleave(function () {
+            $(this).switchClass("topname2", "topname1", 200);
+        });
+    });
+  </script>
+</head>
+<body>
+  <div class="topname1"><img src="assets/sw.png" width="150" height="124"  alt=""/></div>
+  <div id="mainlogo">
+  <a href="photo.html" class="style1">Photo</a><a href="video.html" class="style1">Video</a><a href="contact.html" class="style2">Contact</a>
+  </div>
+  <div id="contact">
+    <p>Sam Wilber</p>
+    <p>Email: samjwilber@gmail.com</p>
+  </div>
+</body>
+</html>

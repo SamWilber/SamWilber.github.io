@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Sam Wilber</title>
+  <link href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">
+  <link href="samwilber_style.css" rel="stylesheet" type="text/css">
+  <link href="http://vjs.zencdn.net/4.12/video-js.css" rel="stylesheet">
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script src="http://vjs.zencdn.net/4.12/video.js"></script>
+  <script type="text/javascript">
+    document.createElement('video');document.createElement('audio');document.createElement('track');
+  </script>
+  <script>
+    $(document).ready(function() {
+        // mouse over
+        $(".style1").mouseenter(function () {
+            $(this).switchClass("style1", "style2", 100);
+        });
+        // mouse out
+        $(".style1").mouseleave(function () {
+            $(this).switchClass("style2", "style1", 100);
+        });
+    });
+  </script>
+  <script>
+  $(function() {
+      $(".toplogo")
+          .mouseover(function() { 
+              var src = $(this).attr("src").replace("logo.png", "logolight.png");
+              $(this).attr("src", src);
+          })
+          .mouseout(function() {
+              var src = $(this).attr("src").replace("logolight.png", "logo.png");
+              $(this).attr("src", src);
+          });
+  });
+  </script>
+</head>
+<body>
+  <div id="mainlogo"><a href="index.html"><img src="assets/logo.png" class="toplogo" width="230" height="126"  alt=""/></a>
+  <a href="photo.html" class="style1">Photo</a><a href="video.html" class="style1">Video</a><a href="contact.html" class="style1">Contact</a>
+  </div>
+  <div id="welcome">
+    <p>Here is the Home Page</p>
+  </div>
+</body>
+</html>

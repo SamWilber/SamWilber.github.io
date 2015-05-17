@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Sam Wilber</title>
+  <link href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">
+  <link href="samwilber_style.css" rel="stylesheet" type="text/css">
+  <link href="http://vjs.zencdn.net/4.12/video-js.css" rel="stylesheet">
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script src="http://vjs.zencdn.net/4.12/video.js"></script>
+  <script type="text/javascript">
+    document.createElement('video');document.createElement('audio');document.createElement('track');
+  </script>
+  <script>
+    $(document).ready(function() {
+        // mouse over
+        $(".style1").mouseenter(function () {
+            $(this).switchClass("style1", "style2", 100);
+        });
+        // mouse out
+        $(".style1").mouseleave(function () {
+            $(this).switchClass("style2", "style1", 100);
+        });
+    });
+  </script>
+  <script>
+    $(document).ready(function() {
+        // mouse over
+        $(".topname1").mouseenter(function () {
+            $(this).switchClass("topname1", "topname2", 200);
+        });
+        // mouse out
+        $(".topname1").mouseleave(function () {
+            $(this).switchClass("topname2", "topname1", 200);
+        });
+    });
+  </script>
+</head>
+<body>
+  <div class="topname1"><img src="assets/sw.png" width="150" height="124"  alt=""/></div>
+  <div id="mainlogo">
+  <a href="photo.html" class="style1">Photo</a><a href="video.html" class="style2">Video</a><a href="contact.html" class="style1">Contact</a>
+  </div>
+  <div class="videos">
+    <h1>Doggy Tails</h1>
+    <video id="doggy_tails" class="video-js vjs-default-skin vjs-big-play-centered"
+  controls preload="auto" width="800" height="450"
+  poster="assets/doggyimg.png"
+  data-setup='{"example_option":true}'>
+  <source src="assets/doggy.mov" type='video/mp4' />
+  </video>
+    <p>Sam and Will contemplate as to what life would be like as a dog. Sam thinks it would be a treat, but Will disagrees.</p>
+  </div>
+  <div class="videos">
+  <h1>Unbound</h1>
+      <video id="unbound_video" class="video-js vjs-default-skin vjs-big-play-centered"
+  controls preload="auto" width="800" height="450"
+  poster="assets/unboundimg.png"
+  data-setup='{"example_option":true}'>
+  <source src="assets/unbound.mov" type='video/mp4' />
+  </video>
+  <p>Unofficial trailer for UNBOUND movie</p>
+  </div>
+    <div id="media">
+    <p><a href="https://www.facebook.com/turtlemansam"><img src="assets/facebook.png" width="61" height="61"  alt=""/></a><br>
+      <a href="http://i.imgur.com/DV4En6H.png"><img src="assets/snapchat.png" width="61" height="61"  alt=""/></a><br>
+    <a href="https://twitter.com/samwilber"><img src="assets/twitter.png" width="61" height="61"  alt=""/></a></p>
+  </div>
+</body>
+</html>

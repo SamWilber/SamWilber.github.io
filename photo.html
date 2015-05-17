@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Sam Wilber</title>
+  <link href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">
+  <link href="samwilber_style.css" rel="stylesheet" type="text/css">
+  <link href="http://vjs.zencdn.net/4.12/video-js.css" rel="stylesheet">
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script src="http://vjs.zencdn.net/4.12/video.js"></script>
+  <script type="text/javascript">
+    document.createElement('video');document.createElement('audio');document.createElement('track');
+  </script>
+  <script>
+    $(document).ready(function() {
+        // mouse over
+        $(".style1").mouseenter(function () {
+            $(this).switchClass("style1", "style2", 100);
+        });
+        // mouse out
+        $(".style1").mouseleave(function () {
+            $(this).switchClass("style2", "style1", 100);
+        });
+    });
+  </script>
+  <script>
+    $(document).ready(function() {
+        // mouse over
+        $(".topname1").mouseenter(function () {
+            $(this).switchClass("topname1", "topname2", 200);
+        });
+        // mouse out
+        $(".topname1").mouseleave(function () {
+            $(this).switchClass("topname2", "topname1", 200);
+        });
+    });
+  </script>
+</head>
+<body>
+  <div class="topname1"><img src="assets/sw.png" width="150" height="124"  alt=""/></div>
+<div id="mainlogo">
+  <a href="photo.html" class="style2">Photo</a><a href="video.html" class="style1">Video</a><a href="contact.html" class="style1">Contact</a>
+  </div>
+  <div id="photos">
+    <p><a href="https://500px.com/photo/25989951/light-%232-by-sam-wilber"><img src="assets/blizzard.jpg" width="622" height="415" alt=""/></a>
+    </p>
+    <p><a href="https://500px.com/photo/5999651/the-beach-by-sam-wilber"><img src="assets/8133 Beach.JPG" width="622" height="415"  alt=""/></a></p>
+    <p><a href="https://500px.com/photo/5999839/brooklyn-bridge-by-sam-wilber"><img src="assets/20111111_IMG_1305.JPG" width="622" height="933"  alt=""/></a></p>
+    <p><img src="assets/4sybmol.jpg" width="622" height="415"  alt=""/></p>
+    <p><img src="assets/7736506652_b2fac5399c_o.jpg" width="622" height="933"  alt=""/></p>
+    <p><img src="assets/beach.JPG" width="622" height="445"  alt=""/></p>
+    <p><img src="assets/IMG_8349.jpg" width="622" height="415"  alt=""/></p>
+  </div>
+  <div id="media">
+    <p><a href="https://www.facebook.com/turtlemansam"><img src="assets/facebook.png" width="61" height="61"  alt=""/></a><br>
+      <a href="http://i.imgur.com/DV4En6H.png"><img src="assets/snapchat.png" width="61" height="61"  alt=""/></a><br>
+    <a href="https://twitter.com/samwilber"><img src="assets/twitter.png" width="61" height="61"  alt=""/></a></p>
+  </div>
+</body>
+</html>

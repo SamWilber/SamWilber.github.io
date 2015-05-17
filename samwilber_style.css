@@ -1,0 +1,128 @@
+@charset "UTF-8";
+body {
+	background-color: #F0F0F0;
+	margin-bottom: 61px;
+}
+.spacer {
+	margin-top: 0px;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+}
+
+#menu {
+	float: left;
+	margin-left: -185px;
+	opacity: 1;
+}
+
+a {
+	font-size: 18px;
+	display: inline-block;
+	color: #F0F0F0;
+	text-decoration: none;
+}
+
+p {
+	font-family: HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
+}
+
+h1 {
+	font-family: HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
+}
+
+.style1 {
+	background-color: #F0F0F0;
+	color: #000000;
+	font-family: HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-right: 1px solid #F0F0F0;
+}
+.style2 {
+	background-color: #040404;
+	color: #FFFFFF;
+	font-family: HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-right: 1px solid #F0F0F0;
+}
+
+#twitter {
+	float: right;
+}
+
+#mainlogo {
+	margin-right: auto;
+	margin-left: auto;
+	width: 280px;
+}
+#welcome {
+	margin-left: 20px;
+}
+.videos {
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 800px;
+}
+#photos {
+	margin-left: auto;
+	margin-right: auto;
+	width: 622px;
+	text-align: center;
+}
+
+#contact {
+	margin-top: 10px;
+	margin-left: 20px;
+}
+
+.toplogo {
+	padding-top: 10px;
+	margin-bottom: -13px;
+	padding-bottom: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#media {
+	position: fixed;
+	height: 61px;
+	bottom: 0px;
+	margin-bottom: 144px;
+	float: right;
+	right: 0px;
+}
+
+#unbound {
+	margin-left: 20px;
+}
+
+#media img {
+    opacity: 0.7;
+}
+
+#media img:hover {
+    opacity: 1;
+}
+
+.topname1 {
+	margin-left: auto;
+	margin-right: auto;
+	width: 150px;
+	padding-bottom: 10px;
+	opacity: 1;
+}
+
+.topname2 {
+	margin-left: auto;
+	margin-right: auto;
+	width: 150px;
+	padding-bottom: 10px;
+	opacity: 0.7;
+}
